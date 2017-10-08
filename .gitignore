@@ -1,0 +1,14 @@
+### OSX ###
+.DS_Store
+
+### intellij ###
+.idea/
+out/
+
+*.iml
+
+### plugin binary ###
+htmlhint-plugin.jar
+htmlhint-plugin.zip
+
+temp

@@ -1,0 +1,1 @@
+# HTMLHint Plugin
