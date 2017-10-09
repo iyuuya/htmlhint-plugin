@@ -13,7 +13,7 @@
 
   <change-notes>
     <![CDATA[
-      <p>1.0.1 First version.</p>
+      <p>1.0.0 First version.</p>
     ]]>
   </change-notes>
 
@@ -25,7 +25,18 @@
   <depends>com.intellij.modules.lang</depends>
 
   <extensions defaultExtensionNs="com.intellij">
-    <!-- Add your extensions here -->
+    <projectService serviceImplementation="com.htmlhint.settings.Settings"/>
+    <projectConfigurable instance="com.htmlhint.settings.HTMLHintSettingsPage"/>
+    <localInspection
+      language="HTML"
+      groupPath="HTML"
+      shortName="HTMLHintInspection"
+      enabledByDefault="true"
+      level="WARNING"
+      bundle="com.htmlhint.HTMLHintBundle"
+      implementationClass="com.htmlhint.HTMLHintInspection"
+      displayName="HTMLHint"
+      groupKey="htmlhint.inspection.group.name"/>
   </extensions>
 
   <project-components>
